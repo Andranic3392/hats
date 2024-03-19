@@ -1,0 +1,22 @@
+@mixin container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 200px;
+    border-bottom: rgb(39, 39, 39) solid 1px;
+}
+
+@mixin container__text {
+    font-family: 'Roboto';
+    font-size: 25px;
+    max-width: 760px;
+    color: white;
+    line-height: 37px;
+}
+
+@mixin container__img {
+    border-radius: 20px;
+    border: rgb(39, 39, 39) solid 3px;
+    height: 270px;
+}
+
+$base-color: #0b1316;

@@ -1,0 +1,384 @@
+@font-face {
+  font-family: Captureit;
+  src: url(fonts/Capture\ it.ttf);
+}
+.header {
+  display: flex;
+  padding: 27.5px;
+  background-color: #0b1316;
+  align-items: center;
+  justify-content: center;
+  border-bottom: rgb(39, 39, 39) solid 1px;
+}
+
+.logo__back {
+  display: flex;
+  background-color: #0b1316;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  border-bottom: rgb(39, 39, 39) solid 1px;
+  background-image: url("img/kamo2.jpg");
+}
+
+.title {
+  font-family: "Captureit";
+  font-size: 35px;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.container {
+  background-color: #0b1316;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 200px;
+  border-bottom: rgb(39, 39, 39) solid 1px;
+}
+.container__text {
+  font-family: "Roboto";
+  font-size: 25px;
+  max-width: 760px;
+  color: white;
+  line-height: 37px;
+}
+.container__img {
+  border-radius: 20px;
+  border: rgb(39, 39, 39) solid 3px;
+  height: 270px;
+}
+.container__catalog {
+  background-color: #0b1316;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+}
+.container__catalog-button {
+  color: rgba(203, 203, 203, 0.923);
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 40px;
+  padding: 10px 15px;
+  background-image: url("img/kamo2.jpg");
+  transition: all 0.2s;
+  border: rgb(39, 39, 39) solid 2px;
+}
+.container__catalog-button:hover {
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.container__catalog-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  font-family: "Roboto";
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  padding: 2.5px;
+  background-color: black;
+}
+.footer__email {
+  padding: 8px 0;
+  line-height: 25px;
+}
+.footer__contacts {
+  padding: 5px 100px;
+  line-height: 25px;
+}
+
+.catalog__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b1316;
+}
+
+.catalog__product {
+  margin-top: 12px;
+  border: 700px;
+  width: 900px;
+  max-height: 700px;
+  overflow-y: scroll;
+  border: rgb(39, 39, 39) solid 1px;
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  border-bottom: rgb(62, 62, 62) solid 2px;
+  gap: 10px;
+  font-family: "Roboto";
+}
+.block__title {
+  margin-top: 5px;
+  color: white;
+  font-size: 24px;
+}
+.block__cost {
+  color: rgb(208, 208, 208);
+  font-size: 20px;
+}
+.block__descr {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: rgb(208, 208, 208);
+  max-width: 640px;
+  line-height: 25px;
+}
+
+.hats {
+  border-radius: 20px;
+  border: rgb(39, 39, 39) solid 2px;
+}
+
+.btnmain {
+  margin: 12px;
+}
+
+@media screen and (max-width: 1700px) {
+  .container {
+    padding: 30px 100px;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .container {
+    padding: 30px 50px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .logo {
+    height: 300px;
+  }
+  .container__text {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .container__img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .title {
+    font-size: 25px;
+  }
+  .logo {
+    height: 250px;
+  }
+  .container {
+    padding: 30px 50px;
+  }
+  .container__text {
+    max-width: 410px;
+  }
+  .container__img {
+    height: 250px;
+  }
+  .footer {
+    justify-content: space-between;
+    padding: 2.5px 10px;
+  }
+  .footer__email {
+    padding: 0;
+    line-height: 25px;
+  }
+  .footer__contacts {
+    padding: 0;
+    line-height: 25px;
+  }
+  .catalog__product {
+    max-width: 700px;
+    max-height: 800px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .header {
+    padding: 20px;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .logo {
+    height: 200px;
+  }
+  .container__text {
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 400px;
+  }
+  .container__img {
+    height: 200px;
+  }
+  .container__catalog {
+    padding: 60px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .title {
+    font-size: 20px;
+  }
+  .logo {
+    height: 200px;
+  }
+  .container__text {
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 300px;
+  }
+  .container__img {
+    height: 200px;
+  }
+  .container__catalog {
+    padding: 40px;
+  }
+  .footer__email {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .footer__contacts {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .catalog__product {
+    max-width: 500px;
+  }
+  .block {
+    gap: 10px;
+  }
+  .block__title {
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  .block__cost {
+    font-size: 15px;
+  }
+  .block__descr {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    max-width: 480px;
+    line-height: 25px;
+  }
+  .hats {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .header {
+    padding: 20px;
+  }
+  .title {
+    font-size: 15px;
+  }
+  .logo {
+    height: 200px;
+  }
+  .container__text {
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 250px;
+  }
+  .container__img {
+    height: 150px;
+  }
+  .container__catalog {
+    padding: 40px;
+  }
+  .container__catalog-button {
+    font-size: 25px;
+    padding: 10px 15px;
+  }
+  .catalog__product {
+    max-width: 400px;
+  }
+  .block {
+    gap: 10px;
+  }
+  .block__title {
+    margin-top: 5px;
+    font-size: 15px;
+  }
+  .block__cost {
+    font-size: 12px;
+  }
+  .block__descr {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 380px;
+    line-height: 20px;
+  }
+  .hats {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 15px;
+    text-align: center;
+  }
+  .logo {
+    height: 200px;
+  }
+  .container__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 500px;
+    padding: 11px 10px;
+  }
+  .container__img {
+    display: none;
+  }
+  .container__catalog {
+    padding: 40px;
+  }
+  .container__catalog-button {
+    font-size: 25px;
+    padding: 10px 15px;
+  }
+  .footer {
+    justify-content: space-between;
+    padding: 2.5px 10px;
+  }
+  .footer__email {
+    font-size: 10px;
+    line-height: 14px;
+    max-width: 150px;
+  }
+  .footer__contacts {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .catalog__product {
+    max-width: 250px;
+  }
+  .block {
+    gap: 10px;
+  }
+  .block__title {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  .block__cost {
+    font-size: 10px;
+  }
+  .block__descr {
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 170px;
+    line-height: 15px;
+  }
+  .hats {
+    height: 80px;
+  }
+}/*# sourceMappingURL=styles.css.map */
